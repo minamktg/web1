@@ -1,24 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<title>시작</title>
+<title>영어공부</title>
 <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "color.js"></script>
 </head>
 <body>
-  <h1><a href="index.html">포트폴리오 사이트</a></h1>
-<ol>
-  <li><a href="1.html">無</a></li>
-  <li><a href="2.html">無無</a></li>
-  <li><a href="3.html">無無無</a></li>
-</ol>
-<h1>無</h1>
+  <h1><a href="index.html">English OneDay OneSentence</a></h1>
+
+  <h1><a> 오늘의 문장 보러가기 </a>  <a href="https://blog.naver.com/souljit1/221305115870" target="_blank"><img src ="arrow.jpg" width="7%"></a></h1>
+
 <p>
-  <ol>
-  <li><a href="1.html">無</a></li>
-  <li><a href="2.html">無無</a></li>
-  <li><a href="3.html">無無無</a></li>
-</ol>
+  <input type = "button" value = '밤' onclick="nightdayhandler(this)">
+  <a href="ex1.html"><input type = "button" value = '1'></a>
+  <a href="ex2.html"><input type = "button" value = '2'></a>
+  <form>
+      <fieldset>
+          <legend>써보기</legend>
+            <p>
+              문장 : <input id = "input1" type="text" size= "50" id="input"/>
+            </p>
+            <p>
+              해석 : <input id = "input2" type="text" size= "50"/>
+            </p>
+            &nbsp;&nbsp;<input type ="button" value = "입력" onclick="
+              document.querySelector('#output').value =
+              document.querySelector('#input1').value + document.querySelector('#input2').value
+            ">
+      </fieldset>
+      <fieldset>
+          <legend> 복 습 </legend>
+            <p>
+              <textarea id="output" cols="120" rows = "10"></textarea>
+            </p>
+      </fieldset>
+  </form>
 </p>
-<img src ="img.jpg" width="80%">
 </body>
 </html>
